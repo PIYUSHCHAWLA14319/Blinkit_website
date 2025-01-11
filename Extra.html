@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .main{
+            max-width: 1170px;
+            height: 200px;
+            background-color:green;
+            margin: auto;
+
+            border: 5px solid red;
+        }
+        .main h1{
+            text-align: center;
+         
+        } */
+
+        .main{
+            max-width: 1280px;
+            margin: auto;
+            display: flex;
+            background-color: red;
+            flex-wrap: wrap;
+            /* border: 1px solid #000; */
+        }
+        .bannerItems{
+            /* border: 1px solid #000; */
+            flex-basis: 23%;
+            margin: 1%;
+        }
+        .bannerItems img{
+            width: 100%;
+        }
+
+
+        @media only screen and (min-width: 200px) and (max-width: 575px){
+          .main{
+            flex-direction: column;
+          }
+        }
+
+        @media only screen and (min-width:576px) and (max-width:991px){
+            .bannerItems{
+            /* border: 1px solid #000; */
+            flex-basis: 48%;
+           
+        }
+        }
+    </style>
+</head>
+<body>
+     <div class="main">
+          <div class="bannerItems">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/app/assets/products/sliding_images/jpeg/2a4962ad-0090-4430-ab9d-57a4f6062f8b.jpg?ts=1728283020" alt="">
+          </div>
+          <div class="bannerItems">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/app/assets/products/sliding_images/jpeg/2a4962ad-0090-4430-ab9d-57a4f6062f8b.jpg?ts=1728283020" alt="">
+          </div>
+          <div class="bannerItems">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/app/assets/products/sliding_images/jpeg/2a4962ad-0090-4430-ab9d-57a4f6062f8b.jpg?ts=1728283020" alt="">
+          </div>
+          <div class="bannerItems">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/app/assets/products/sliding_images/jpeg/2a4962ad-0090-4430-ab9d-57a4f6062f8b.jpg?ts=1728283020" alt="">
+          </div>
+     </div>
+</body>
+</html>
