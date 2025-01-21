@@ -32,10 +32,27 @@
         <input type="text" />
       </form>
       <div class="rightDiv">
-        <a href="#">Login</a>
+        <a href="#" id="loginBtn">Login</a>
         <a href="#"> <i class="bx bx-cart-add"></i>Add Cart</a>
       </div>
     </header>
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
     <!-- Add the Banner Section -->
     <section class="bannerbox">
       <img src="./image/Group-33704.jpg" alt="" />
